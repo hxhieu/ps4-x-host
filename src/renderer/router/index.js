@@ -7,8 +7,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default,
+      name: 'dashboard',
+      component: require('@/components/Dashboard').default,
+    },
+    {
+      path: '/dns',
+      name: 'dns-server',
+      component: require('@/components/DnsServer').default,
+    },
+    {
+      path: '/web',
+      name: 'web-server',
+      component: require('@/components/WebServer').default,
     },
     {
       path: '*',

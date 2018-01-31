@@ -6,7 +6,9 @@ import App from './App';
 import router from './router';
 import store from './store';
 
+
 import '../../node_modules/material-icon-font/iconfont/material-design-iconfont.css';
+import '../../node_modules/vuetify/dist/vuetify.min.css';
 
 Vue.use(Vuetify);
 
