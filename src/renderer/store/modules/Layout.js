@@ -2,6 +2,10 @@ import { LAYOUT_TITLE } from '../types';
 
 const state = {
   title: 'Dashboard',
+  server: {
+    dns: false,
+    web: false,
+  },
 };
 
 const mutations = {
