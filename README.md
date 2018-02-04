@@ -1,4 +1,4 @@
-# ps4-xhost
+# ps4-x-host
 
 > An electron-vue project
 
