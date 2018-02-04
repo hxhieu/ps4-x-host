@@ -50,7 +50,11 @@
       </v-container>
     </v-content>
     <v-footer app fixed>
-      <span>PS4 X-Host by Hugh Hoang &copy; {{ new Date().getFullYear() }}</span>
+      <span>
+        PS4 X-Host
+        <a href="">v1.0</a>
+        hxhieu &copy; {{ new Date().getFullYear() }}
+      </span>
     </v-footer>
   </div>
 </template>
