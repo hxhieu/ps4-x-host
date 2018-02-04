@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "~material-design-icons-iconfont/dist/material-design-icons";
-/* CSS */
+html {
+  overflow-y: auto;
+}
 </style>
