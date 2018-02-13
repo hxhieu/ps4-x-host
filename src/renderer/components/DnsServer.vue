@@ -63,6 +63,7 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
+import DnsServer from '@modules/dns';
 
 export default {
   data: () => ({
@@ -88,6 +89,8 @@ export default {
 
       return digit.test(hostString) ? ip.test(host) : domain.test(host);
     };
+
+    this.instance = new DnsServer();
   },
   computed: {
     ...mapState('Layout', ['server']),
@@ -107,6 +110,7 @@ export default {
               'Cannot start server. Invalid IP or domain for custom host.';
             this.snackbar.colour = 'error';
           } else {
+            this.instance.start();
             this.snackbar.text = 'DNS Server has started successfully.';
           }
         } else {
